@@ -6,7 +6,7 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/gaochao1/swcollector/g"
+	"github.com/Donghui0/swcollector/g"
 )
 
 type Dto struct {

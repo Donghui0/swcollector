@@ -1,0 +1,9 @@
+package: github.com/Donghui0/swcollector
+import:
+- package: github.com/gaochao1/sw
+- package: github.com/open-falcon/common
+  subpackages:
+  - model
+- package: github.com/toolkits/file
+- package: github.com/toolkits/net
+- package: github.com/toolkits/slice
