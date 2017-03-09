@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/Donghui0/swcollector/g"
-	"github.com/open-falcon/common/model"
+	"github.com/leancloud/satori/common/model"
 
 	"github.com/gaochao1/sw"
 	"github.com/toolkits/slice"

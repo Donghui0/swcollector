@@ -3,11 +3,10 @@ package g
 import (
 	"log"
 	"os"
-	"strings"
 
 	"time"
 
-	"github.com/open-falcon/common/model"
+	"github.com/leancloud/satori/common/model"
 	"github.com/toolkits/net"
 )
 
@@ -52,19 +51,19 @@ func SendToTransfer(metrics []*model.MetricValue) {
 	debug := Config().Debug
 	debug_endpoints := Config().Debugmetric.Endpoints
 	debug_metrics := Config().Debugmetric.Metrics
-	debug_tags := Config().Debugmetric.Tags
-	debug_Tags := strings.Split(debug_tags, ",")
+	//debug_tags := Config().Debugmetric.Tags
+	//debug_Tags := strings.Split(debug_tags, ",")
 	if debug {
 		for _, metric := range metrics {
-			metric_tags := strings.Split(metric.Tags, ",")
+			//metric_tags := strings.Split(metric.Tags, ",")
 			if in_array(metric.Endpoint, debug_endpoints) && in_array(metric.Metric, debug_metrics) {
-				if array_include(debug_Tags, metric_tags) {
-					log.Printf("=> <Total=%d> %v\n", len(metrics), metric)
-				}
-				if debug_tags == "" {
-					log.Printf("=> <Total=%d> %v\n", len(metrics), metric)
-				}
-
+				log.Printf("=> <Total=%d> %v\n", len(metrics), metric)
+				// if array_include(debug_Tags, metric_tags) {
+				// 	log.Printf("=> <Total=%d> %v\n", len(metrics), metric)
+				// }
+				// if debug_tags == "" {
+				// 	log.Printf("=> <Total=%d> %v\n", len(metrics), metric)
+				// }
 			}
 		}
 	}

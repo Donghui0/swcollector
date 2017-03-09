@@ -1,5 +1,5 @@
-hash: 4d773024ab520184c826b37a1f410346dbf45d2014d3fddfd2ce8d292e386728
-updated: 2017-03-07T15:10:21.570715458+08:00
+hash: fcde6b0f019ffb8018f16a3af08cf28bb0ee2006a488b4ba6dbf6fc53b41ae01
+updated: 2017-03-08T14:12:19.737682728+08:00
 imports:
 - name: github.com/alouca/gologger
   version: 7d4b7291de9c9df1b3fe6a3d784b3675b6c0c996
@@ -9,11 +9,11 @@ imports:
   version: 783a67a067fd5ead4ae37c06c301435204c75f30
 - name: github.com/gaochao1/sw
   version: 766e493421c89f4fffe449f8ce4bce0cc1418846
-- name: github.com/open-falcon/common
-  version: b9ba65549217ef89b4d1d05d8eb58fe493e5f982
+- name: github.com/leancloud/satori
+  version: 2c8f33e18cf45eda3bf85df90ea6eb1ecb639232
   subpackages:
-  - model
-  - utils
+  - common/model
+  - common/utils
 - name: github.com/toolkits/file
   version: a5b3c5147e07f934d9f9d00b901a20b2529f1a57
 - name: github.com/toolkits/net
@@ -22,18 +22,13 @@ imports:
   version: e44a80af24848e28cf208d84778e62e660303159
 - name: github.com/toolkits/sys
   version: dfa2296d011f057bf18e1b0496c3aeaf1acb3606
-- name: github.com/toolkits/time
-  version: c274716e8d7f05a41031c2fe34b0c1ac6f5e94f9
-- name: golang.org/x/net/bpf
-  version: ""
-- name: golang.org/x/net/icmp
-  version: ""
-- name: golang.org/x/net/internal/iana
-  version: ""
-- name: golang.org/x/net/internal/netreflect
-  version: ""
-- name: golang.org/x/net/ipv4
-  version: ""
-- name: golang.org/x/net/ipv6
-  version: ""
+- name: golang.org/x/net
+  version: d379faa25cbdc04d653984913a2ceb43b0bc46d7
+  subpackages:
+  - icmp
+  - ipv4
+  - ipv6
+  - internal/iana
+  - bpf
+  - internal/netreflect
 testImports: []

@@ -8,7 +8,6 @@ import (
 	"github.com/Donghui0/swcollector/cron"
 	"github.com/Donghui0/swcollector/funcs"
 	"github.com/Donghui0/swcollector/g"
-	"github.com/Donghui0/swcollector/http"
 )
 
 func main() {
@@ -38,8 +37,6 @@ func main() {
 	funcs.BuildMappers()
 
 	cron.Collect()
-
-	go http.Start()
 
 	select {}
 

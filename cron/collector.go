@@ -3,7 +3,7 @@ package cron
 import (
 	"github.com/Donghui0/swcollector/funcs"
 	"github.com/Donghui0/swcollector/g"
-	"github.com/open-falcon/common/model"
+	"github.com/leancloud/satori/common/model"
 	"log"
 	"math"
 	"time"

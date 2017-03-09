@@ -3,7 +3,7 @@ package funcs
 import (
 	"github.com/gaochao1/sw"
 	"github.com/Donghui0/swcollector/g"
-	"github.com/open-falcon/common/model"
+	"github.com/leancloud/satori/common/model"
 	"log"
 	"time"
 )

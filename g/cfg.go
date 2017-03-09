@@ -55,11 +55,6 @@ type TransferConfig struct {
 	Timeout  int    `json:"timeout"`
 }
 
-type HttpConfig struct {
-	Enabled bool   `json:"enabled"`
-	Listen  string `json:"listen"`
-}
-
 type GlobalConfig struct {
 	Debug       bool               `json:"debug"`
 	Debugmetric *DebugmetricConfig `json:"debugmetric`
@@ -68,7 +63,6 @@ type GlobalConfig struct {
 	Switch      *SwitchConfig      `json:"switch"`
 	Heartbeat   *HeartbeatConfig   `json:"heartbeat"`
 	Transfer    *TransferConfig    `json:"transfer"`
-	Http        *HttpConfig        `json:"http"`
 }
 
 var (

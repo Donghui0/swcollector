@@ -3,7 +3,7 @@ package http
 import (
 	"encoding/json"
 	"github.com/Donghui0/swcollector/g"
-	"github.com/open-falcon/common/model"
+	"github.com/leancloud/satori/common/model"
 	"net/http"
 )
 
